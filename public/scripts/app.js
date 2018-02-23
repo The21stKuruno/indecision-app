@@ -1,26 +1,14 @@
 'use strict';
 
-var appRoot = document.getElementById('app');
+var visibility = false;
 
-var listNote = {
-  note: []
-};
-
-var showIt = function showIt() {
-  var putNote = 'Wiwoo! What\'s Poppin?';
-  listNote.note.push(putNote);
-  console.log(listNote.note);
-  render();
-};
-
-var hideIt = function hideIt() {
-  listNote.note = [];
-  console.log(listNote.note);
+var toggleVisibility = function toggleVisibility() {
+  visibility = !visibility;
   render();
 };
 
 var render = function render() {
-  var template = React.createElement(
+  var jsx = React.createElement(
     'div',
     null,
     React.createElement(
@@ -28,22 +16,17 @@ var render = function render() {
       null,
       'Visibility Toggle'
     ),
-    listNote.note.length > 0 ? React.createElement(
+    React.createElement(
       'button',
-      { onClick: hideIt },
-      'Hide Note'
-    ) : React.createElement(
-      'button',
-      { onClick: showIt },
-      'Show Note'
+      { onClick: toggleVisibility },
+      visibility ? 'Hide details' : 'Show details'
     ),
-    listNote.note && React.createElement(
+    visibility && React.createElement(
       'p',
       null,
-      listNote.note
+      'Hey! There are some details you can now see!'
     )
   );
-  ReactDOM.render(template, appRoot);
+  ReactDOM.render(jsx, document.getElementById('app'));
 };
-
 render();
