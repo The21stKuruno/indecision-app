@@ -56,7 +56,7 @@ class IndecisionApp extends React.Component {
 }
 
 IndecisionApp.defaultProps = {
-  options: []
+  options: ['Cris']
 };
 
 const Header = (props) => {
