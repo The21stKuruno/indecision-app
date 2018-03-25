@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Cris-Aian\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run serve
+  C:\Program Files\nodejs\node.exe C:\Users\Cris-Aian\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run build-babel
 
 PATH: 
-  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Cris-Aian\AppData\Roaming\npm;C:\Users\Cris-Aian\AppData\Local\atom\bin
+  C:\Program Files\cmder\bin;C:\Program Files\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Program Files\cmder\vendor\conemu-maximus5;C:\Program Files\cmder\vendor\conemu-maximus5\ConEmu;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Cris-Aian\AppData\Roaming\npm;C:\Users\Cris-Aian\AppData\Local\atom\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\share\vim\vim74;C:\Program Files\cmder\
 
 Yarn version: 
   1.5.1
@@ -3572,9 +3572,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 3221225786
+  Exit code: 1
   Command: C:\WINDOWS\system32\cmd.exe
-  Arguments: /d /s /c live-server public/
+  Arguments: /d /s /c babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
   Directory: C:\Users\Cris-Aian\Desktop\react-course-projects\indecision-app
   Output:
   
