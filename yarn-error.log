@@ -2,7 +2,7 @@ Arguments:
   C:\Program Files\nodejs\node.exe C:\Users\Cris-Aian\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run dev-server
 
 PATH: 
-  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Cris-Aian\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\Cris-Aian\AppData\Roaming\npm;C:\Users\Cris-Aian\AppData\Local\atom\bin
+  C:\Program Files\cmder\bin;C:\Program Files\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Program Files\cmder\vendor\conemu-maximus5;C:\Program Files\cmder\vendor\conemu-maximus5\ConEmu;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Cris-Aian\AppData\Roaming\npm;C:\Users\Cris-Aian\AppData\Local\atom\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\share\vim\vim74;C:\Program Files\cmder\
 
 Yarn version: 
   1.5.1
@@ -35,6 +35,7 @@ npm manifest:
       "css-loader": "0.28.4",
       "live-server": "^1.2.0",
       "node-sass": "4.7.2",
+      "normalize.css": "7.0.0",
       "react": "16.0.0",
       "react-dom": "16.0.0",
       "react-modal": "2.2.2",
@@ -3553,6 +3554,10 @@ Lockfile:
       prepend-http "^1.0.0"
       query-string "^4.1.0"
       sort-keys "^1.0.0"
+  
+  normalize.css@7.0.0:
+    version "7.0.0"
+    resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-7.0.0.tgz#abfb1dd82470674e0322b53ceb1aaf412938e4bf"
   
   "npmlog@0 || 1 || 2 || 3 || 4", npmlog@^4.0.0, npmlog@^4.0.2:
     version "4.1.2"
